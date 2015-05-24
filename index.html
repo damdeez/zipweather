@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>ZipCode Weather</title>
+  <meta name="description" content="ZipCode Weather App">
+  <meta name="author" content="Damir">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+    <div class="zip-container">
+      <header>
+        <h1 id="logo-title"><img src="weather.png"></h1>
+      </header>
+      <section class="input-form container">
+          <h2>To check your weather please enter your zipcode</h2>
+          <input id="textfield" type="text" name="text" inputmode="number" maxlength="5" minlength="5" placeholder="Zip Code" required>
+          <input id="subbtn" type="submit" name="submit">
+          <br>
+      </section>
+      <section class="results container">
+          <div id="error"></div><br>
+          <div id="input-result"></div><br>
+          <div id="weather-result"></div>
+      </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
