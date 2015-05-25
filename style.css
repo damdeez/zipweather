@@ -34,7 +34,6 @@ header {
     min-height: 150px;
 	margin: 10px 0 40px;
 }
-
 #subbtn {
 	background-color: #3aa0e3;
 	color: #fff;
@@ -54,4 +53,10 @@ header {
 #weather-result span, 
 #input-result span {
     font-weight: 500;
+}
+#error {
+	margin: 15px 0;
+	color: #ff495a;
+	font-weight: 900;
+	font-size: 80%;
 }

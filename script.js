@@ -4,7 +4,7 @@ $(function () {
     	var textfield = document.getElementById('textfield').value;
         var zipURLjson = 'http://api.openweathermap.org/data/2.5/weather?zip=' + textfield +',us&APPID=7c81a45ff51330c7cc25bc7f027131e8&units=imperial&callback=?';
         if (textfield.length < 4) {
-	    		alert("You must put in a 5-digit zip code");
+	    		$('#error').text('* Please enter a 5-digit zip code.')
 	    		return;
 	    	}
 
@@ -16,15 +16,15 @@ $(function () {
 	    	weatherConditions.toLowerCase();
 
 	    	$.each(data, function () {
-	    		$('#weather-result').text('Looks like the weather in ' +  cityName + ' will consist of ' + weatherConditions + ' with the current temperature of ' + temperature + ' degrees.');
+	    		$('#weather-result').text('Looks like the weather in ' +  cityName + ' consists of ' + weatherConditions + ' with the current temperature of ' + temperature + ' degrees.');
 	    	});
 	    	function zipresponse () {
-		        $('#input-result').text('You entered the zipcode ' + textfield + ', which is in ' + cityName);
+		        $('#input-result').text('You entered the zipcode ' + textfield + ', which is in ' + cityName + '.');
 		    };
 	        zipresponse(textfield);
 
 	    })
-	    .error(function () {
+	    .fail(function () {
 	    	$('#error').text('Sorry, something went wrong!');
 	    });
     	
