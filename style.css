@@ -51,7 +51,8 @@ header {
 	border: 2px solid #ddd;
 }
 #weather-result span, 
-#input-result span {
+#input-result span,
+.bolder {
     font-weight: 500;
 }
 #error {
