@@ -34,14 +34,16 @@ header {
     min-height: 150px;
 	margin: 10px 0 40px;
 }
-#subbtn {
+#subbtn,
+#location {
 	background-color: #3aa0e3;
 	color: #fff;
 	padding: 5px 10px;
 	border: 2px solid #2a90d3;
 	text-transform: uppercase;
 }
-#subbtn:hover {
+#subbtn:hover,
+#location:hover {
 	opacity: 0.8;
     cursor: pointer;
 }
